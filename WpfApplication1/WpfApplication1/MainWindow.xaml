@@ -3,17 +3,19 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Height="350" Width="525" Title="Karlogs mail client">
     <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,0,0.4,-0.2" >
 
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition x:Name="Column1" Width="35*"/>
-                    <ColumnDefinition Width="Auto"/>
-                    <ColumnDefinition x:Name="Column2" Width="65*"/>
-                </Grid.ColumnDefinitions>
-      
-        <Grid.RowDefinitions>
-            <RowDefinition Height="9*"/>
-            <RowDefinition Height="98*"/>
-        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            
+            <ColumnDefinition/>
+            
+            <ColumnDefinition/>
 
+
+
+        </Grid.ColumnDefinitions>
+        
+        <GridSplitter Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" Width="5" ShowsPreview="True"></GridSplitter>
+        <TreeView HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="LightPink" />
+       
     </Grid>
 
 
