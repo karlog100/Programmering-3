@@ -95,6 +95,16 @@ namespace MailClient
             else
                 return "not html...";
         }
+
+        //public static string getBodyOffTheMails(Message mail)
+        //{
+        //    StringBuilder theText = new StringBuilder();
+        //    MessagePart plainText =
+        //}
+
+
+
+        
         
     }
 }

@@ -33,23 +33,42 @@ namespace MailClient
 
             txtMailList.Text = myMails.Count.ToString();
 
+    //        foreach (Message mail in myMails)
+    //{
+    //    txtMail.Text = Mail.FindPlainTextInMessage(mail) + "/n";
+
+    //    txtMail.Text = Mail.FindHtmlInMessage(mail) + "/n";
+
+    //    txtMail.Text = "                                                              ";
+
+
+    //    txtMail.Text = Mail.test42(mail);
+
+    //}
+
+            StringBuilder builder = new StringBuilder();
             foreach (Message mail in myMails)
-	{
-        txtMail.Text = Mail.FindPlainTextInMessage(mail) + "/n";
-
-        txtMail.Text = Mail.FindHtmlInMessage(mail) + "/n";
-
-        txtMail.Text = "                                                              ";
-
-
-        txtMail.Text = Mail.test42(mail);
-
-	}
-            
+            {
+                MessagePart plainText = mail.FindFirstPlainTextVersion();
+                if (plainText != null)
+                {
+                    builder.Append(plainText.GetBodyAsText());
+                }
+                else
+                {
+                    MessagePart html = mail.FindFirstHtmlVersion();
+                    if (html != null)
+                    {
+                        builder.Append(html.GetBodyAsText());
+                    }
+                }
+                MessageBox.Show(builder.ToString());
+            }
 
 
             
 
         }
+        
     }
 }
