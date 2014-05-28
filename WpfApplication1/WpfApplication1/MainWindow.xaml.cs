@@ -24,8 +24,7 @@ namespace MailClient
         public MainWindow()
         {
             InitializeComponent();
-            System.Threading.Thread.Sleep(1500);
-                    string hostname = "pop3.live.com";
+        string hostname = "pop3.live.com";
         int port = 995; 
         bool useSsl = true;
         string username = @"f.isse2009@live.dk";
@@ -33,6 +32,22 @@ namespace MailClient
             List<Message> myMails = Mail.FetchAllMessages(hostname, port, useSsl, username, password);
 
             txtMailList.Text = myMails.Count.ToString();
+
+            foreach (Message mail in myMails)
+	{
+        txtMail.Text = Mail.FindPlainTextInMessage(mail) + "/n";
+
+        txtMail.Text = Mail.FindHtmlInMessage(mail) + "/n";
+
+        txtMail.Text = "                                                              ";
+
+
+        txtMail.Text = Mail.test42(mail);
+
+	}
+            
+
+
             
 
         }

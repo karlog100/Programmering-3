@@ -35,8 +35,7 @@
         <TextBlock Name="txtMailList" Margin="5,0,0,0" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="1" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Stretch" Background="Blue"/>
         
         
-        <TextBlock Name="txtMail" Margin="5,0,0,0" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="1" TextWrapping="Wrap" Text="testsetsetsetsetsetsekldfjaklfjasdkl´jflskdfjklsdjfaskld´fjklfjsdklajfklsad´jfaklsd´jfklsdjfklsdjfklsdjafklsjdklfjsdklfjklsdjfklsdjfklsdjfklsdjfklsdjfklsdjfklsjfklsdjlfsdklfjls
-                   sdklfjsdlkfjslkfjskldfjskldjfklsdjfklsdjfklsdjfklsdjfklsdjflk" VerticalAlignment="Stretch" Background="Violet"/>
+        <TextBlock Name="txtMail" Margin="5,0,0,0" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="1" TextWrapping="Wrap" Text="MAIL:" VerticalAlignment="Stretch" Background="Violet"/>
         
         
         <GridSplitter HorizontalAlignment="Left" Width="5" ShowsPreview="True" Grid.Column="1" Grid.Row="2" Margin="0,0,5,0" />

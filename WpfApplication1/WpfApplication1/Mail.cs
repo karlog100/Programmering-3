@@ -60,8 +60,41 @@ namespace MailClient
             }
         }
 
-        
+        public static string FindPlainTextInMessage(Message mail)
+        {
+            MessagePart plainText = mail.FindFirstPlainTextVersion();
+            if (plainText != null)
+            {
+                return plainText.ToString();
+            }
+            else
+                return "not plain text";
+        }
 
+        public static string FindHtmlInMessage(Message mail)
+        {
+            MessagePart html = mail.FindFirstHtmlVersion();
+            if (html != null)
+            {
+                return html.ToString();
+            }
+
+            else
+                return "not html...";
+        }
+
+
+        public static string test42(Message mail)
+        {
+            string text = mail.FindAllTextVersions().ToString();
+            if (text != null)
+            {
+                return text.ToString();
+            }
+
+            else
+                return "not html...";
+        }
         
     }
 }
