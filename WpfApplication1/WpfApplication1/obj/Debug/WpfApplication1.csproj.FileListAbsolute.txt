@@ -24,5 +24,5 @@ C:\Users\computer\Documents\Visual Studio 2013\Projects\Programmering-3\WpfAppli
 C:\Users\computer\Documents\Visual Studio 2013\Projects\Programmering-3\WpfApplication1\WpfApplication1\obj\Debug\App.g.cs
 C:\Users\computer\Documents\Visual Studio 2013\Projects\Programmering-3\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1_MarkupCompile.cache
 C:\Users\computer\Documents\Visual Studio 2013\Projects\Programmering-3\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.g.resources
-C:\Users\computer\Documents\Visual Studio 2013\Projects\Programmering-3\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.Properties.Resources.resources
 C:\Users\computer\Documents\Visual Studio 2013\Projects\Programmering-3\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.csproj.GenerateResource.Cache
+C:\Users\computer\Documents\Visual Studio 2013\Projects\Programmering-3\WpfApplication1\WpfApplication1\obj\Debug\MailClient.Properties.Resources.resources
