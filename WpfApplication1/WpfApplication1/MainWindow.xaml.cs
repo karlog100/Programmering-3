@@ -24,6 +24,8 @@ namespace MailClient
         public MainWindow()
         {
             InitializeComponent();
+
+            // getting all mails form the mail boks.
         string hostname = "pop3.live.com";
         int port = 995; 
         bool useSsl = true;
@@ -33,42 +35,11 @@ namespace MailClient
 
             txtMailList.Text = myMails.Count.ToString();
 
-    //        foreach (Message mail in myMails)
-    //{
-    //    txtMail.Text = Mail.FindPlainTextInMessage(mail) + "/n";
+            //browserMailRead.Source = Mail.readMail(myMails[1]);
 
-    //    txtMail.Text = Mail.FindHtmlInMessage(mail) + "/n";
-
-    //    txtMail.Text = "                                                              ";
-
-
-    //    txtMail.Text = Mail.test42(mail);
-
-    //}
-
-            StringBuilder builder = new StringBuilder();
-            foreach (Message mail in myMails)
-            {
-                MessagePart plainText = mail.FindFirstPlainTextVersion();
-                if (plainText != null)
-                {
-                    builder.Append(plainText.GetBodyAsText());
-                }
-                else
-                {
-                    MessagePart html = mail.FindFirstHtmlVersion();
-                    if (html != null)
-                    {
-                        builder.Append(html.GetBodyAsText());
-                    }
-                }
-                MessageBox.Show(builder.ToString());
-            }
-
+            //.Text = Mail.readMail(myMails[1]);
 
             
-
-        }
-        
+        }     
     }
 }

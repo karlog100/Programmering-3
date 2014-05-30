@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using OpenPop;
 using OpenPop.Mime;
 using OpenPop.Pop3;
+using System.IO;
 
 namespace MailClient
 {
@@ -20,16 +21,8 @@ namespace MailClient
         /// <param name="useSsl">Whether or not to use SSL to connect to server</param>
         /// <param name="username">Username of the user on the server</param>
         /// <param name="password">Password of the user on the server</param>
-        /// <returns>All Messages on the POP3 server</returns>
-        
-        string hostname = "pop3.live.com";
-        int port = 995; 
-        bool useSsl = true;
-        string username = @"f.isse2009@live.dk";
-        string password = "Testtest";
-        
-        
-        
+        /// <returns>All Messages on the POP3 server</returns>        
+        // Downloading all mails...
         public static List<Message> FetchAllMessages(string hostname, int port, bool useSsl, string username, string password)
         {
             // The client disconnects from the server when being disposed
@@ -60,46 +53,87 @@ namespace MailClient
             }
         }
 
-        public static string FindPlainTextInMessage(Message mail)
+
+
+        public static string readMail (Message mail)
         {
+            StringBuilder bodyBuilder = new StringBuilder();
+
             MessagePart plainText = mail.FindFirstPlainTextVersion();
+            MessagePart htmlText = mail.FindFirstHtmlVersion();
+
             if (plainText != null)
-            {
-                return plainText.ToString();
-            }
-            else
-                return "not plain text";
-        }
+                bodyBuilder.Append(plainText.GetBodyAsText());
+            
+            if (htmlText != null)
+                bodyBuilder.Append(htmlText.GetBodyAsText());
+            
 
-        public static string FindHtmlInMessage(Message mail)
+            if (plainText == null && bodyBuilder == null)
+                 return "Empty mail";
+            
+            else
+                return bodyBuilder.ToString();
+        }
+        /// <summary>
+        /// Example showing:
+        ///  - how to save a message to a file
+        ///  - how to load a message from a file at a later point
+        /// </summary>
+        /// <param name="mail">The message to save and load at a later point</param>
+        /// <returns>The Message, but loaded from the file system</returns>
+        public static Message SaveAndLoadFullMessage(Message mail)
         {
-            MessagePart html = mail.FindFirstHtmlVersion();
-            if (html != null)
-            {
-                return html.ToString();
-            }
+            // FileInfo about the location to save/load message
+            FileInfo file = new FileInfo("someFile.eml");
 
-            else
-                return "not html...";
+            // Save the full message to some file
+            mail.Save(file);
+
+            // Now load the message again. This could be done at a later point
+            Message loadedMessage = Message.Load(file);
+
+            // use the message again
+            return loadedMessage;
         }
 
 
-        public static string test42(Message mail)
-        {
-            string text = mail.FindAllTextVersions().ToString();
-            if (text != null)
-            {
-                return text.ToString();
-            }
 
-            else
-                return "not html...";
-        }
 
-        //public static string getBodyOffTheMails(Message mail)
+        //public static string FindPlainTextInMessage(Message mail)
         //{
-        //    StringBuilder theText = new StringBuilder();
-        //    MessagePart plainText =
+        //    MessagePart plainText = mail.FindFirstPlainTextVersion();
+        //    if (plainText != null)
+        //    {
+        //        return plainText.ToString();
+        //    }
+        //    else
+        //        return "not plain text";
+        //}
+
+        //public static string FindHtmlInMessage(Message mail)
+        //{
+        //    MessagePart html = mail.FindFirstHtmlVersion();
+        //    if (html != null)
+        //    {
+        //        return html.ToString();
+        //    }
+
+        //    else
+        //        return "not html...";
+        //}
+
+
+        //public static string test42(Message mail)
+        //{
+        //    string text = mail.FindAllTextVersions().ToString();
+        //    if (text != null)
+        //    {
+        //        return text.ToString();
+        //    }
+
+        //    else
+        //        return "not html...";
         //}
 
 
