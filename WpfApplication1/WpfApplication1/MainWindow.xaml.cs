@@ -39,7 +39,7 @@ namespace MailClient
 
             //.Text = Mail.readMail(myMails[1]);
 
-            
+            Mail.SaveAndLoadFullMessage(myMails[1]);
         }     
     }
 }

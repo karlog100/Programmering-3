@@ -12,6 +12,8 @@ namespace MailClient
 {
     class Mail
     {
+
+
         /// <summary>
         /// Example showing:
         ///  - how to fetch all messages from a POP3 server
@@ -82,7 +84,7 @@ namespace MailClient
         /// </summary>
         /// <param name="mail">The message to save and load at a later point</param>
         /// <returns>The Message, but loaded from the file system</returns>
-        public static Message SaveAndLoadFullMessage(Message mail)
+        public static Message SaveAndLoadFullMessage (Message mail)
         {
             // FileInfo about the location to save/load message
             FileInfo file = new FileInfo("someFile.eml");
