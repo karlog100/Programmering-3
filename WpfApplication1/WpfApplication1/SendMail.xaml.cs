@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using MailClient;
+using System.Threading;
 
 namespace MailClient
 {
@@ -22,6 +24,13 @@ namespace MailClient
         public SendMail()
         {
             InitializeComponent();
+        }
+
+        private void btrMailSen_Click(object sender, RoutedEventArgs e)
+        {
+
+            Thread sendMailThread = new Thread(Mail.sendEmail(txtReciver.Text, @"f.isse2009@live.dk", txtsubject.Text, txtSendMailBody.Text, "Testtest"));
+            
         }
     }
 }

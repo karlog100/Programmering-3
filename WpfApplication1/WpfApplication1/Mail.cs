@@ -7,6 +7,8 @@ using OpenPop;
 using OpenPop.Mime;
 using OpenPop.Pop3;
 using System.IO;
+using System.Net.Mail;
+using System.Windows;
 
 namespace MailClient
 {
@@ -77,6 +79,46 @@ namespace MailClient
             else
                 return bodyBuilder.ToString();
         }
+
+
+        //For sending mails..
+        public static void sendEmail(string reciverMail, string senderMail, string subject, string textBody, string mailPassword)
+        {
+            SmtpClient c = new SmtpClient(@"smtp.live.com", 25);
+            MailAddress add = new MailAddress(reciverMail);
+            MailMessage msg = new MailMessage();
+            msg.To.Add(add);
+            msg.From = new MailAddress(senderMail);
+            msg.IsBodyHtml = true;
+            msg.Subject = subject;
+            msg.Body = textBody;
+            c.Credentials = new System.Net.NetworkCredential(senderMail, mailPassword);
+            c.EnableSsl = true;
+            
+            try
+            {
+                c.Send(msg);
+            }
+            catch(Exception e) {
+                MessageBox.Show(e.ToString());
+            }
+        }
+
+        public static void sendEmail(string reciverMail, string senderMail, string subject, string textBody, string mailPassword, string CC)
+        {
+            SmtpClient c = new SmtpClient(@"smtp.live.com", 25);
+            MailAddress add = new MailAddress(reciverMail);
+            MailMessage msg = new MailMessage();
+            msg.To.Add(add);
+            msg.From = new MailAddress(senderMail);
+            msg.IsBodyHtml = true;
+            msg.Subject = subject;
+            msg.Body = textBody;
+            c.Credentials = new System.Net.NetworkCredential(senderMail, mailPassword);
+            c.EnableSsl = true;
+            c.Send(msg);
+        }
+
         /// <summary>
         /// Example showing:
         ///  - how to save a message to a file

@@ -14,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace MailClient
 {
     /// <summary>
@@ -40,6 +41,12 @@ namespace MailClient
             //.Text = Mail.readMail(myMails[1]);
 
             Mail.SaveAndLoadFullMessage(myMails[1]);
+        }
+
+        private void menuSend_Click(object sender, RoutedEventArgs e)
+        {
+            SendMail sendMailWindow = new SendMail();
+            sendMailWindow.Show();
         }     
     }
 }
