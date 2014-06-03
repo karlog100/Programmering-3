@@ -21,10 +21,11 @@
         </Label>
         <TextBox HorizontalAlignment="Left" Height="23" x:Name="txtCC" Margin="92,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="CC:" HorizontalAlignment="Left" Margin="61,28,0,0" VerticalAlignment="Top" Height="26" Width="26"/>
-        <Button Content="Add file" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50"  x:Name="btrAddFileToMail" Height="19" Margin="0,31,0,0"/>
+        <Button Content="Add file" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50"  x:Name="btrAddFileToMail" Height="19" Margin="0,31,0,0" Click="btrAddFileToMail_Click"/>
         <TextBox HorizontalAlignment="Stretch" x:Name="txtSendMailBody" Margin="5,30,5,5" TextWrapping="Wrap" VerticalAlignment="Stretch" Grid.Row="1"/>
         <TextBox HorizontalAlignment="Stretch" x:Name="txtsubject" Margin="0,0,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Grid.RowSpan="2"/>
         <Label Content="Subject:" HorizontalAlignment="Left" Margin="0,52,0,0" VerticalAlignment="Top" Height="26" Width="61"/>
+        <Label Name="lblAttachments" Content="no attachments" HorizontalAlignment="Left" Margin="83,54,0,0" VerticalAlignment="Top" Height="26" Width="61" Grid.RowSpan="2"/>
 
 
     </Grid>

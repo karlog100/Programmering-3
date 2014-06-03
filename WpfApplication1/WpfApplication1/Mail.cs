@@ -9,6 +9,7 @@ using OpenPop.Pop3;
 using System.IO;
 using System.Net.Mail;
 using System.Windows;
+using System.Threading;
 
 namespace MailClient
 {
@@ -82,8 +83,12 @@ namespace MailClient
 
 
         //For sending mails..
-        public static void sendEmail(string reciverMail, string senderMail, string subject, string textBody, string mailPassword)
+        public static void sendEmail(string reciverMail, string senderMail, string subject, string textBody, string mailPassword, string attachment)
         {
+            ThreadStart processTaskThread = delegate
+            {
+            
+            
             SmtpClient c = new SmtpClient(@"smtp.live.com", 25);
             MailAddress add = new MailAddress(reciverMail);
             MailMessage msg = new MailMessage();
@@ -92,6 +97,7 @@ namespace MailClient
             msg.IsBodyHtml = true;
             msg.Subject = subject;
             msg.Body = textBody;
+            //msg.Attachments.Add(new Attachment(attachment));
             c.Credentials = new System.Net.NetworkCredential(senderMail, mailPassword);
             c.EnableSsl = true;
             
@@ -102,10 +108,16 @@ namespace MailClient
             catch(Exception e) {
                 MessageBox.Show(e.ToString());
             }
+            };
+            Thread thread = new Thread(processTaskThread);
+            thread.Start();
         }
 
-        public static void sendEmail(string reciverMail, string senderMail, string subject, string textBody, string mailPassword, string CC)
+        public static void sendEmail(string reciverMail, string senderMail, string subject, string textBody, string mailPassword)
         {
+            ThreadStart processTaskThread = delegate
+            {
+            
             SmtpClient c = new SmtpClient(@"smtp.live.com", 25);
             MailAddress add = new MailAddress(reciverMail);
             MailMessage msg = new MailMessage();
@@ -116,8 +128,34 @@ namespace MailClient
             msg.Body = textBody;
             c.Credentials = new System.Net.NetworkCredential(senderMail, mailPassword);
             c.EnableSsl = true;
-            c.Send(msg);
+
+            try
+            {
+                c.Send(msg);
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.ToString());
+            }
+                        };
+            Thread thread = new Thread(processTaskThread);
+            thread.Start();
         }
+
+        //public static void sendEmail(string reciverMail, string senderMail, string subject, string textBody, string mailPassword, string CC)
+        //{
+        //    SmtpClient c = new SmtpClient(@"smtp.live.com", 25);
+        //    MailAddress add = new MailAddress(reciverMail);
+        //    MailMessage msg = new MailMessage();
+        //    msg.To.Add(add);
+        //    msg.From = new MailAddress(senderMail);
+        //    msg.IsBodyHtml = true;
+        //    msg.Subject = subject;
+        //    msg.Body = textBody;
+        //    c.Credentials = new System.Net.NetworkCredential(senderMail, mailPassword);
+        //    c.EnableSsl = true;
+        //    c.Send(msg);
+        //}
 
         /// <summary>
         /// Example showing:

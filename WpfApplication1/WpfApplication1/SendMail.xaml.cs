@@ -21,6 +21,7 @@ namespace MailClient
     /// </summary>
     public partial class SendMail : Window
     {
+        private string filename;
         public SendMail()
         {
             InitializeComponent();
@@ -28,9 +29,36 @@ namespace MailClient
 
         private void btrMailSen_Click(object sender, RoutedEventArgs e)
         {
+            if (lblAttachments.Content.ToString() == "no attachments")
+                Mail.sendEmail(txtReciver.Text, @"f.isse2009@live.dk", txtsubject.Text, txtSendMailBody.Text, "Testtest");
 
-            Thread sendMailThread = new Thread(Mail.sendEmail(txtReciver.Text, @"f.isse2009@live.dk", txtsubject.Text, txtSendMailBody.Text, "Testtest"));
-            
+            else
+                Mail.sendEmail(txtReciver.Text, @"f.isse2009@live.dk", txtsubject.Text, txtSendMailBody.Text, "Testtest", lblAttachments.Content.ToString());
+
+        }
+
+        private void btrAddFileToMail_Click(object sender, RoutedEventArgs e)
+        {
+            // Create OpenFileDialog 
+            Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog();
+
+            // Set filter for file extension and default file extension 
+            dlg.DefaultExt = ".png";
+            dlg.Filter = "JPEG Files (*.jpeg)|*.jpeg|PNG Files (*.png)|*.png|JPG Files (*.jpg)|*.jpg|GIF Files (*.gif)|*.gif";
+
+
+            // Display OpenFileDialog by calling ShowDialog method 
+            Nullable<bool> result = dlg.ShowDialog();
+
+
+            // Get the selected file name and display in a TextBox 
+            if (result == true)
+            {
+                
+                // Open document 
+                filename = dlg.FileName;
+                lblAttachments.Content = filename;
+            }
         }
     }
 }
