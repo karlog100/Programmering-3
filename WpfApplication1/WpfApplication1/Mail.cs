@@ -91,22 +91,27 @@ namespace MailClient
             
             SmtpClient c = new SmtpClient(@"smtp.live.com", 25);
             MailAddress add = new MailAddress(reciverMail);
-            MailMessage msg = new MailMessage();
-            msg.To.Add(add);
-            msg.From = new MailAddress(senderMail);
-            msg.IsBodyHtml = true;
-            msg.Subject = subject;
-            msg.Body = textBody;
-            //msg.Attachments.Add(new Attachment(attachment));
+            MailMessage mail = new MailMessage();
+            mail.To.Add(add);
+            mail.From = new MailAddress(senderMail);
+            mail.IsBodyHtml = true;
+            mail.Subject = subject;
+            mail.Body = textBody;
+            mail.Attachments.Add(new Attachment(attachment));
             c.Credentials = new System.Net.NetworkCredential(senderMail, mailPassword);
             c.EnableSsl = true;
             
             try
             {
-                c.Send(msg);
+                c.Send(mail);
             }
             catch(Exception e) {
                 MessageBox.Show(e.ToString());
+            }
+
+            finally
+            {
+                c.Dispose();
             }
             };
             Thread thread = new Thread(processTaskThread);
@@ -120,22 +125,26 @@ namespace MailClient
             
             SmtpClient c = new SmtpClient(@"smtp.live.com", 25);
             MailAddress add = new MailAddress(reciverMail);
-            MailMessage msg = new MailMessage();
-            msg.To.Add(add);
-            msg.From = new MailAddress(senderMail);
-            msg.IsBodyHtml = true;
-            msg.Subject = subject;
-            msg.Body = textBody;
+            MailMessage mail = new MailMessage();
+            mail.To.Add(add);
+            mail.From = new MailAddress(senderMail);
+            mail.IsBodyHtml = true;
+            mail.Subject = subject;
+            mail.Body = textBody;
             c.Credentials = new System.Net.NetworkCredential(senderMail, mailPassword);
             c.EnableSsl = true;
 
             try
             {
-                c.Send(msg);
+                c.Send(mail);
             }
             catch (Exception e)
             {
                 MessageBox.Show(e.ToString());
+            }
+            finally
+            {
+                c.Dispose();
             }
                         };
             Thread thread = new Thread(processTaskThread);

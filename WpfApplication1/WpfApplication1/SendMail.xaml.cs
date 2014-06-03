@@ -35,6 +35,8 @@ namespace MailClient
             else
                 Mail.sendEmail(txtReciver.Text, @"f.isse2009@live.dk", txtsubject.Text, txtSendMailBody.Text, "Testtest", lblAttachments.Content.ToString());
 
+            this.Close();
+
         }
 
         private void btrAddFileToMail_Click(object sender, RoutedEventArgs e)
