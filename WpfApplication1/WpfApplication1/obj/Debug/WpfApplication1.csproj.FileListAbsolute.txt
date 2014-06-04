@@ -17,8 +17,6 @@ C:\Users\computer\Documents\Visual Studio 2013\Projects\Programmering-3\WpfAppli
 C:\Users\computer\Documents\Visual Studio 2013\Projects\Programmering-3\WpfApplication1\WpfApplication1\bin\Debug\WpfApplication1.exe.config
 C:\Users\computer\Documents\Visual Studio 2013\Projects\Programmering-3\WpfApplication1\WpfApplication1\bin\Debug\WpfApplication1.exe
 C:\Users\computer\Documents\Visual Studio 2013\Projects\Programmering-3\WpfApplication1\WpfApplication1\bin\Debug\WpfApplication1.pdb
-C:\Users\computer\Documents\Visual Studio 2013\Projects\Programmering-3\WpfApplication1\WpfApplication1\bin\Debug\WpfApplication1.exe.CodeAnalysisLog.xml
-C:\Users\computer\Documents\Visual Studio 2013\Projects\Programmering-3\WpfApplication1\WpfApplication1\bin\Debug\WpfApplication1.exe.lastcodeanalysissucceeded
 C:\Users\computer\Documents\Visual Studio 2013\Projects\Programmering-3\WpfApplication1\WpfApplication1\bin\Debug\EntityFramework.dll
 C:\Users\computer\Documents\Visual Studio 2013\Projects\Programmering-3\WpfApplication1\WpfApplication1\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\computer\Documents\Visual Studio 2013\Projects\Programmering-3\WpfApplication1\WpfApplication1\bin\Debug\OpenPop.dll
@@ -42,3 +40,4 @@ C:\Users\computer\Documents\Visual Studio 2013\Projects\Programmering-3\WpfAppli
 C:\Users\computer\Documents\Visual Studio 2013\Projects\Programmering-3\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.csproj.GenerateResource.Cache
 C:\Users\computer\Documents\Visual Studio 2013\Projects\Programmering-3\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.exe
 C:\Users\computer\Documents\Visual Studio 2013\Projects\Programmering-3\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.pdb
+C:\Users\computer\Documents\Visual Studio 2013\Projects\Programmering-3\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.csprojResolveAssemblyReference.cache

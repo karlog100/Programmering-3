@@ -64,20 +64,20 @@ namespace MailClient
                 {
                     if(MailItem.Headers.MessageId.Length >= 0)
                     { 
-                    MessagePart html = MailItem.FindFirstHtmlVersion();
-                    MessagePart plainText = MailItem.FindFirstPlainTextVersion();
-                    if (html != null)
-                    {
+                    //MessagePart html = MailItem.FindFirstHtmlVersion();
+                    //MessagePart plainText = MailItem.FindFirstPlainTextVersion();
+                    //if (html != null)
+                    //{
+
+                        string txtSQLQuery = @"INSERT INTO MailList (MessageId, Receiver, Sender, Date, Subject, Message) VALUES ('" + MailItem.Headers.MessageId + "','" + MailItem.Headers.To + "','" + MailItem.Headers.From + "','" + MailItem.Headers.DateSent + "','" + MailItem.Headers.Subject + "', @param)";
                         
-                        string txtSQLQuery = "INSERT INTO MailList (MessageId, Receiver, Sender, Date, Subject, Message) VALUES ('" + MailItem.Headers.MessageId + "','" + MailItem.Headers.To + "','" + MailItem.Headers.Sender + "','" + MailItem.Headers.DateSent + "','" + MailItem.Headers.Subject + "','" + plainText + "')";
-                        
-                        SQLHandling.insetToDatabase(txtSQLQuery);
-                    }
-                    else if (plainText != null)
-                    {
-                        string txtSQLQuery = "INSERT INTO MailList (MessageId, Receiver, Sender, Date, Subject, Message) VALUES ('" + MailItem.Headers.MessageId + "','" + MailItem.Headers.To + "','" + MailItem.Headers.Sender + "','" + MailItem.Headers.DateSent + "','" + MailItem.Headers.Subject + "','" + html + "')";
-                        SQLHandling.insetToDatabase(txtSQLQuery);
-                    }
+                        SQLHandling.insetToDatabase(txtSQLQuery, readMail(MailItem));
+                    //}
+                    //else if (plainText != null)
+                    //{
+                      //  string txtSQLQuery = "INSERT INTO MailList (MessageId, Receiver, Sender, Date, Subject, Message) VALUES ('" + MailItem.Headers.MessageId + "','" + MailItem.Headers.To + "','" + MailItem.Headers.Sender + "','" + MailItem.Headers.DateSent + "','" + MailItem.Headers.Subject + "','" + plainText.GetBodyAsText() + "')";
+                        //SQLHandling.insetToDatabase(txtSQLQuery);
+                    //}
                     }
                     
                 }
