@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OpenPop.Mime;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -46,7 +47,7 @@ namespace MailClient
         }
 
         //Takes SQLCOMMAND as parameter and run the command aginst the Database.
-        public static void insetToDatabase(string SQLCOMMAND, string mail)
+        public static void insetToDatabase( Message mail)
          {
              dbConnection.Open();
              //SQLiteCommand command = new SQLiteCommand(SQLCOMMAND, dbConnection);
@@ -56,9 +57,22 @@ namespace MailClient
              SQLiteCommand cmd = new SQLiteCommand(dbConnection);
              SQLiteParameter param = cmd.CreateParameter();
 
+             string SQLCOMMAND = @"INSERT INTO MailList (MessageId, Receiver, Sender, Date, Subject, Message) VALUES ('" + mail.Headers.MessageId + "','" + mail.Headers.To + "','" + mail.Headers.From + "','" + mail.Headers.DateSent + "','" + mail.Headers.Subject + "', @param)";
+
+
              cmd.CommandText = SQLCOMMAND;
              param.ParameterName = "param";
-             param.Value = mail;
+             MessagePart html = mail.FindFirstHtmlVersion();
+             MessagePart plainText = mail.FindFirstPlainTextVersion();
+            StringBuilder builder = new StringBuilder();
+
+            if (html != null)
+                param.Value = builder.Append(html.GetBodyAsText()).ToString();
+
+
+            else
+                param.Value = plainText.GetBodyAsText();
+             
              cmd.Parameters.Add(param);
              try
              {
@@ -69,6 +83,7 @@ namespace MailClient
                  
                  
              }
+                 //always close the connection!!
              finally { dbConnection.Close(); }
 
          }

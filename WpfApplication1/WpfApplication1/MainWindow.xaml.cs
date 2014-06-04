@@ -22,10 +22,15 @@ namespace MailClient
     /// </summary>
     public partial class MainWindow : Window
     {
+        private Mail mailObjct = new Mail();
+        List<MailObjects> Inbox;
         public MainWindow()
         {
             InitializeComponent();
             SQLHandling.CreateDatabase();
+            //this need to be enabled when no more debugging
+            //mailObjct.FetchAllMessages();
+            Inbox = SQLHandling.readMails();
         }
 
         private void menuSend_Click(object sender, RoutedEventArgs e)
@@ -41,18 +46,30 @@ namespace MailClient
         }
 
         private void menuRecive_Click(object sender, RoutedEventArgs e)
-        {
-            Mail mailObjct = new Mail();
+        {            
             mailObjct.FetchAllMessages();
-            
+
+            foreach (MailObjects mail in Inbox)
+            {
+                MailoviewObject NewItem = new MailoviewObject(mail);
+                
+                //ListBoxItem newitem = new ListBoxItem();
+                //newitem.Content = mail.subject;
+                listMailOverView.Children.Add(NewItem);    
+            } 
         }
+
+        
 
         private void menuAbout_Click(object sender, RoutedEventArgs e)
         {
-            
-            List<MailObjects> Inbox = SQLHandling.readMails();
 
-            browserMailRead.NavigateToString(Inbox[1].message);
+            
+        }
+
+        private void MailOverView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            //browserMailRead.NavigateToString(Inbox[listMailOverView.SelectedIndex].message);
         }     
     }
 }

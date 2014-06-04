@@ -59,25 +59,35 @@ namespace MailClient
                     
                     
                 }
+                //////////////// Now return the fetched messages to the database
+                //////////////foreach (Message MailItem in allMessages)
+                //////////////{
+                //////////////    if(MailItem.Headers.MessageId.Length >= 0)
+                //////////////    { 
+                //////////////    //MessagePart html = MailItem.FindFirstHtmlVersion();
+                //////////////    //MessagePart plainText = MailItem.FindFirstPlainTextVersion();
+                //////////////    //if (html != null)
+                //////////////    //{
+
+                //////////////        string txtSQLQuery = @"INSERT INTO MailList (MessageId, Receiver, Sender, Date, Subject, Message) VALUES ('" + MailItem.Headers.MessageId + "','" + MailItem.Headers.To + "','" + MailItem.Headers.From + "','" + MailItem.Headers.DateSent + "','" + MailItem.Headers.Subject + "', @param)";
+                        
+                //////////////        SQLHandling.insetToDatabase(txtSQLQuery, readMail(MailItem));
+                //////////////    //}
+                //////////////    //else if (plainText != null)
+                //////////////    //{
+                //////////////      //  string txtSQLQuery = "INSERT INTO MailList (MessageId, Receiver, Sender, Date, Subject, Message) VALUES ('" + MailItem.Headers.MessageId + "','" + MailItem.Headers.To + "','" + MailItem.Headers.Sender + "','" + MailItem.Headers.DateSent + "','" + MailItem.Headers.Subject + "','" + plainText.GetBodyAsText() + "')";
+                //////////////        //SQLHandling.insetToDatabase(txtSQLQuery);
+                //////////////    //}
+                //////////////    }
                 // Now return the fetched messages to the database
                 foreach (Message MailItem in allMessages)
                 {
-                    if(MailItem.Headers.MessageId.Length >= 0)
-                    { 
-                    //MessagePart html = MailItem.FindFirstHtmlVersion();
-                    //MessagePart plainText = MailItem.FindFirstPlainTextVersion();
-                    //if (html != null)
-                    //{
-
-                        string txtSQLQuery = @"INSERT INTO MailList (MessageId, Receiver, Sender, Date, Subject, Message) VALUES ('" + MailItem.Headers.MessageId + "','" + MailItem.Headers.To + "','" + MailItem.Headers.From + "','" + MailItem.Headers.DateSent + "','" + MailItem.Headers.Subject + "', @param)";
-                        
-                        SQLHandling.insetToDatabase(txtSQLQuery, readMail(MailItem));
-                    //}
-                    //else if (plainText != null)
-                    //{
-                      //  string txtSQLQuery = "INSERT INTO MailList (MessageId, Receiver, Sender, Date, Subject, Message) VALUES ('" + MailItem.Headers.MessageId + "','" + MailItem.Headers.To + "','" + MailItem.Headers.Sender + "','" + MailItem.Headers.DateSent + "','" + MailItem.Headers.Subject + "','" + plainText.GetBodyAsText() + "')";
-                        //SQLHandling.insetToDatabase(txtSQLQuery);
-                    //}
+                    //We dont want to store SPAM so we are not taki
+                    if (MailItem.Headers.MessageId.Length >= 0)
+                    {
+                        //Sending the mail over to the SQL handler for storing
+                        SQLHandling.insetToDatabase(MailItem);
+        
                     }
                     
                 }

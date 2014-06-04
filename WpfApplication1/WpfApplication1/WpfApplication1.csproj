@@ -74,6 +74,9 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="MailObjects.cs" />
+    <Compile Include="MailoviewObject.xaml.cs">
+      <DependentUpon>MailoviewObject.xaml</DependentUpon>
+    </Compile>
     <Compile Include="newMailAccount.xaml.cs">
       <DependentUpon>newMailAccount.xaml</DependentUpon>
     </Compile>
@@ -81,6 +84,10 @@
       <DependentUpon>SendMail.xaml</DependentUpon>
     </Compile>
     <Compile Include="SQLHandling.cs" />
+    <Page Include="MailoviewObject.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

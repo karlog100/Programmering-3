@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MailClient
 {
-    class MailObjects
+    public class MailObjects
     {
         public string messageID;
         public string receiver;
