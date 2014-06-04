@@ -10,13 +10,12 @@ using System.IO;
 using System.Net.Mail;
 using System.Windows;
 using System.Threading;
+using System.Data.SQLite;
 
 namespace MailClient
 {
     class Mail
     {
-
-
         /// <summary>
         /// Example showing:
         ///  - how to fetch all messages from a POP3 server
@@ -28,16 +27,21 @@ namespace MailClient
         /// <param name="password">Password of the user on the server</param>
         /// <returns>All Messages on the POP3 server</returns>        
         // Downloading all mails...
-        public static List<Message> FetchAllMessages(string hostname, int port, bool useSsl, string username, string password)
+        public void FetchAllMessages()
         {
+            try
+            {
+
+
             // The client disconnects from the server when being disposed
             using (Pop3Client client = new Pop3Client())
             {
                 // Connect to the server
-                client.Connect(hostname, port, useSsl);
+                client.Connect(Properties.Settings.
+                    Default.POPServer, Properties.Settings.Default.POPPort, Properties.Settings.Default.SSL);
 
                 // Authenticate ourselves towards the server
-                client.Authenticate(username, password);
+                client.Authenticate(Properties.Settings.Default.UserName, Properties.Settings.Default.Password);
 
                 // Get the number of messages in the inbox
                 int messageCount = client.GetMessageCount();
@@ -51,13 +55,43 @@ namespace MailClient
                 for (int i = messageCount; i > 0; i--)
                 {
                     allMessages.Add(client.GetMessage(i));
+                    MessageBox.Show(i.ToString());
+                    
+                    
+                }
+                // Now return the fetched messages to the database
+                foreach (Message MailItem in allMessages)
+                {
+                    if(MailItem.Headers.MessageId.Length >= 0)
+                    { 
+                    MessagePart html = MailItem.FindFirstHtmlVersion();
+                    MessagePart plainText = MailItem.FindFirstPlainTextVersion();
+                    if (html != null)
+                    {
+                        
+                        string txtSQLQuery = "INSERT INTO MailList (MessageId, Receiver, Sender, Date, Subject, Message) VALUES ('" + MailItem.Headers.MessageId + "','" + MailItem.Headers.To + "','" + MailItem.Headers.Sender + "','" + MailItem.Headers.DateSent + "','" + MailItem.Headers.Subject + "','" + plainText + "')";
+                        
+                        SQLHandling.insetToDatabase(txtSQLQuery);
+                    }
+                    else if (plainText != null)
+                    {
+                        string txtSQLQuery = "INSERT INTO MailList (MessageId, Receiver, Sender, Date, Subject, Message) VALUES ('" + MailItem.Headers.MessageId + "','" + MailItem.Headers.To + "','" + MailItem.Headers.Sender + "','" + MailItem.Headers.DateSent + "','" + MailItem.Headers.Subject + "','" + html + "')";
+                        SQLHandling.insetToDatabase(txtSQLQuery);
+                    }
+                    }
+                    
                 }
 
-                // Now return the fetched messages
-                return allMessages;
+                
+                
+                
             }
-        }
 
+            }
+            
+            catch(Exception e)
+            { MessageBox.Show(e.Message); }
+        }
 
 
         public static string readMail (Message mail)

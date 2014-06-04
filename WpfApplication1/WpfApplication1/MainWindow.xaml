@@ -23,10 +23,9 @@
         </Grid.ColumnDefinitions>
 
         <Menu Name="menuPanel" Height="26" Background="Green" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Grid.ColumnSpan="3">
-            <MenuItem x:Name="menuFile" Header="File" Width="41"/>
-
+            <MenuItem x:Name="NewMailAccount" Header="Add mail account" Width="112" Click="NewMailAccount_Click"/>
             <MenuItem x:Name="menuSend" Header="Send" Width="52" Click="menuSend_Click"/>
-            <MenuItem x:Name="menuRecive" Header="Recive" HorizontalAlignment="Stretch" Width="64" Height="23"/>
+            <MenuItem x:Name="menuRecive" Header="Recive" HorizontalAlignment="Stretch" Width="64" Height="23" Click="menuRecive_Click"/>
             <MenuItem x:Name="menuSendAndRecive" Header="Send and recive all" Width="127"/>
             <MenuItem x:Name="menuAbout" Header="About"/>
         </Menu>

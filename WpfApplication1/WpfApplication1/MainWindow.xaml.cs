@@ -25,28 +25,42 @@ namespace MailClient
         public MainWindow()
         {
             InitializeComponent();
+            SQLHandling.CreateDatabase();
 
-            // getting all mails form the mail boks.
-        string hostname = "pop3.live.com";
-        int port = 995; 
-        bool useSsl = true;
-        string username = @"f.isse2009@live.dk";
-        string password = "Testtest";
-            List<Message> myMails = Mail.FetchAllMessages(hostname, port, useSsl, username, password);
+        ////////////////////////////    // getting all mails form the mail boks.
+        ////////////////////////////string hostname = "pop3.live.com";
+        ////////////////////////////int port = 995; 
+        ////////////////////////////bool useSsl = true;
+        ////////////////////////////string username = @"f.isse2009@live.dk";
+        ////////////////////////////string password = "Testtest";
+        ////////////////////////////    List<Message> myMails = Mail.FetchAllMessages(hostname, port, useSsl, username, password);
 
-            txtMailList.Text = myMails.Count.ToString();
+        ////////////////////////////    txtMailList.Text = myMails.Count.ToString();
 
             //browserMailRead.Source = Mail.readMail(myMails[1]);
 
             //.Text = Mail.readMail(myMails[1]);
 
-            Mail.SaveAndLoadFullMessage(myMails[1]);
+            //////////Mail.SaveAndLoadFullMessage(myMails[1]);
         }
 
         private void menuSend_Click(object sender, RoutedEventArgs e)
         {
             SendMail sendMailWindow = new SendMail();
             sendMailWindow.Show();
+        }
+
+        private void NewMailAccount_Click(object sender, RoutedEventArgs e)
+        {
+            newMailAccount newMailWindow = new newMailAccount();
+            newMailWindow.Show();
+        }
+
+        private void menuRecive_Click(object sender, RoutedEventArgs e)
+        {
+            Mail mailObjct = new Mail();
+            mailObjct.FetchAllMessages();
+            
         }     
     }
 }
