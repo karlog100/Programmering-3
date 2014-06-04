@@ -45,6 +45,11 @@ namespace MailClient
             Mail mailObjct = new Mail();
             mailObjct.FetchAllMessages();
             
+        }
+
+        private void menuAbout_Click(object sender, RoutedEventArgs e)
+        {
+            browserMailRead.NavigateToString("test");
         }     
     }
 }

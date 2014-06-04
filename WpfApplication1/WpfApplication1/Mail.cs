@@ -90,7 +90,7 @@ namespace MailClient
             }
             
             catch(Exception e)
-            { MessageBox.Show(e.Message); }
+            {}
         }
 
 
