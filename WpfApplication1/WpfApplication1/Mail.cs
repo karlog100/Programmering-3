@@ -89,7 +89,7 @@ namespace MailClient
 
             }
             
-            catch(Exception e)
+            catch
             {}
         }
 

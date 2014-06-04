@@ -49,7 +49,10 @@ namespace MailClient
 
         private void menuAbout_Click(object sender, RoutedEventArgs e)
         {
-            browserMailRead.NavigateToString("test");
+            
+            List<MailObjects> Inbox = SQLHandling.readMails();
+
+            browserMailRead.NavigateToString(Inbox[1].message);
         }     
     }
 }

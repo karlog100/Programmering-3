@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Data.SQLite;
 using System.Linq;
 using System.Text;
@@ -69,17 +70,50 @@ namespace MailClient
                  
              }
              finally { dbConnection.Close(); }
-                   
-
-
 
          }
 
+        public static List<MailObjects> readMails()
+        {
+
+            List<MailObjects> mailList = new List<MailObjects>();
+            
+            SQLiteCommand cmd = new SQLiteCommand(dbConnection);
+            
+            cmd.CommandText = "SELECT * FROM MailList";
+
+            try 
+	{
+        dbConnection.Open();
+                SQLiteDataReader reader = cmd.ExecuteReader();
+                
+                while (reader.Read())
+	{
+        MailObjects nextMail = new MailObjects(reader.GetString(0), reader.GetString(1), reader.GetString(2), reader.GetString(3), reader.GetString(4), reader.GetString(5));
+	         mailList.Add(nextMail);
+	}
+                reader.Close();
+		
+	}
+	catch (Exception)
+	{
+		
+		throw;
+	}
+            finally{
+                dbConnection.Close();
+            }
+                
+
+
+                
+            return mailList;
+        }
+            
 
 
 
 
 
-
-                }
+   }
 }
