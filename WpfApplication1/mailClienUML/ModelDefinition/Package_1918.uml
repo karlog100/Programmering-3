@@ -70,71 +70,6 @@
         </appliedStereotypesInternal>
         <ownedOperationsInternal>
           <operation
-            Id="d136b171-6a95-4106-b869-3b8197657dc1"
-            name="Mail"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <referencesInternal>
-              <reference
-                Id="99205d1d-8051-4728-b966-c6f5f34a07aa"
-                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcomputer%2FDocuments%2FVisual Studio 2013%2FProjects%2FProgrammering-3%2FWpfApplication1%2FWpfApplication1%2Fbin%2FDebug%2FWpfApplication1.exe&quot; Namespace%3DMailClient Type%3DMail Member%3D.ctor"
-                tag="ViewCode" />
-            </referencesInternal>
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="9e35e2a7-e538-4602-953a-4ce4c0801689"
-                name="method"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="01821bdd-aba8-48ce-a4b2-726b1d521116">
-                    <propertyInstance
-                      Id="f55c475f-5eb6-471e-b8d5-4efa5976ae56"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="fc3aa30d-be26-41ed-91f9-795304fbf693">
-                    <propertyInstance
-                      Id="7f14f025-6ccd-4609-8b5d-891c0bee613d"
-                      name="IsPartial"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="ac0e6f01-5cf8-44f3-9e90-42f6f6459c47">
-                    <propertyInstance
-                      Id="c89ac136-6597-4044-89be-08ec5025e4a8"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="b955358f-defa-4715-9045-8d23525eb701">
-                    <propertyInstance
-                      Id="456fa15f-7b38-48a2-8080-344a73c8b5af"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="b2afe54f-c05c-4a07-afdd-ff1c7307589b">
-                    <propertyInstance
-                      Id="6786cb12-715b-4f0c-9f96-950ed839ce79"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="b9a6c17e-2dc3-4fc1-8f44-afda09e79f49">
-                    <propertyInstance
-                      Id="c93502c8-b840-4e05-b1b2-fac093d5565a"
-                      name="params"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-          </operation>
-          <operation
             Id="6da559d4-c6a6-4098-9888-3e73ffbe578a"
             name="SaveAndLoadFullMessage"
             isLeaf="false"
@@ -731,6 +666,71 @@
                     Id="9ececd99-a635-4b0d-9efd-516a60746958">
                     <propertyInstance
                       Id="cba0c4ce-f807-4d96-aa0f-6530182beeea"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="0480db49-8397-461c-bcac-c99014bb407c"
+            name="Mail"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="8ae4b282-3728-42cd-bfd0-be3130a22553"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcomputer%2FDocuments%2FVisual Studio 2013%2FProjects%2FProgrammering-3%2FWpfApplication1%2FWpfApplication1%2Fbin%2FDebug%2FWpfApplication1.exe&quot; Namespace%3DMailClient Type%3DMail Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="11d37bca-260e-41f2-83f1-850e191982f7"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ea6e04af-edb2-4960-b750-8808e180876f">
+                    <propertyInstance
+                      Id="7b365f35-43e7-4562-9da0-9650bc0d1e7e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cfdf3eab-1e2b-4d78-bb88-3050601ee350">
+                    <propertyInstance
+                      Id="5b949f78-c117-41e4-9bbc-83db7ab360a8"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d3445207-d42a-46ba-9415-52bb159e9b5e">
+                    <propertyInstance
+                      Id="4822df8c-1bd9-42a3-b004-50369a15e601"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6c251ddb-237f-4d1b-a5a0-d0f8007c9acd">
+                    <propertyInstance
+                      Id="ef27d90a-e0e5-4ce1-a114-1f60a9c530dc"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e7b2898c-6e03-4f6f-9d30-4396664a556a">
+                    <propertyInstance
+                      Id="6474528d-6b76-48a4-9bff-ecc0ef8d5f8b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="85ecbb5c-ccd8-4a9b-a22c-8efe66f7dc03">
+                    <propertyInstance
+                      Id="657b5830-3465-478c-8cc1-750edbf07a3b"
                       name="params"
                       value="false" />
                   </stereotypeInstanceHasPropertyInstances>
@@ -3401,71 +3401,6 @@
             </ownedParameters>
           </operation>
           <operation
-            Id="032d5862-cebf-4728-bc6f-b235b005ad6b"
-            name="MainWindow"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <referencesInternal>
-              <reference
-                Id="6b118fea-3c50-48ef-9700-071f40e99ace"
-                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcomputer%2FDocuments%2FVisual Studio 2013%2FProjects%2FProgrammering-3%2FWpfApplication1%2FWpfApplication1%2Fbin%2FDebug%2FWpfApplication1.exe&quot; Namespace%3DMailClient Type%3DMainWindow Member%3D.ctor"
-                tag="ViewCode" />
-            </referencesInternal>
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="74f617cc-258b-4c2d-bbeb-5d3ac97d382f"
-                name="method"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="6eaa23a2-a473-4ac5-8759-548703f1f924">
-                    <propertyInstance
-                      Id="b681a631-90ca-4dac-b3dd-8f9f5107b29e"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="abab488f-feba-437c-9e24-8bd7c8466808">
-                    <propertyInstance
-                      Id="4be02f8c-a25f-4a5e-b0f7-e0f64c9d9290"
-                      name="IsPartial"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="c5715b44-0092-4301-9021-ab44f23de163">
-                    <propertyInstance
-                      Id="bf0883fa-948e-479d-b392-d1d363974b52"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="468c74cf-172b-4221-a4b4-7e3103fc6ad4">
-                    <propertyInstance
-                      Id="7b912f09-4c09-4aaa-8f1e-4e1e32c7ab32"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="5c01b92d-f49d-4761-ad49-cb7200386b36">
-                    <propertyInstance
-                      Id="81851233-2095-4be0-ad68-6dfdbf3d0b5c"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="d1b90833-cf35-4d3d-8325-925ab8edde1b">
-                    <propertyInstance
-                      Id="b048f086-a9fa-4363-997d-fc96e670bb89"
-                      name="params"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-          </operation>
-          <operation
             Id="ae5e331f-d8ee-4f46-9a66-fec6216d3aa7"
             name="InitializeComponent"
             isLeaf="false"
@@ -4059,6 +3994,71 @@
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
+          </operation>
+          <operation
+            Id="907e712e-39c6-4d7b-976a-0028df54ea26"
+            name="MainWindow"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="e9298838-70e7-4b72-8cc9-f3840be9eba9"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcomputer%2FDocuments%2FVisual Studio 2013%2FProjects%2FProgrammering-3%2FWpfApplication1%2FWpfApplication1%2Fbin%2FDebug%2FWpfApplication1.exe&quot; Namespace%3DMailClient Type%3DMainWindow Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9f5495ab-af0c-4dec-b17f-16f43993f996"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2e3a19d0-fded-418d-80f3-209efc3f7ca4">
+                    <propertyInstance
+                      Id="cd4400bb-0bc9-4374-b827-6abd20259a2d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9c5fb870-8ce1-4480-ba9e-c6d28448be39">
+                    <propertyInstance
+                      Id="1da005d4-e731-457d-8cdc-e68885659998"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="da78539c-a8b3-4ae2-8f92-f2918a03c4b4">
+                    <propertyInstance
+                      Id="2b35f650-4b44-45c2-a6f9-58bf5a00c966"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c818efc7-93f4-48fc-80d9-bec3b8520fa0">
+                    <propertyInstance
+                      Id="e9ebf89c-dd08-491d-b839-8086c926285d"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6ce47fa4-49c3-4c72-940f-3d071fe0173e">
+                    <propertyInstance
+                      Id="929a88b2-d60b-4d53-b02c-cfce0bb25dbe"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e6d2dd9b-55c0-4175-aa9b-6c0503d8e00d">
+                    <propertyInstance
+                      Id="ade90259-0de8-4df1-8755-2063d5039366"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
           </operation>
         </ownedOperationsInternal>
       </class>
@@ -4918,71 +4918,6 @@
             </ownedParameters>
           </operation>
           <operation
-            Id="afa28c93-df17-4cc0-a4e2-033ef12f8bfb"
-            name="newMailAccount"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <referencesInternal>
-              <reference
-                Id="9dd0b9ec-caaf-4c3a-bb04-3038bed68691"
-                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcomputer%2FDocuments%2FVisual Studio 2013%2FProjects%2FProgrammering-3%2FWpfApplication1%2FWpfApplication1%2Fbin%2FDebug%2FWpfApplication1.exe&quot; Namespace%3DMailClient Type%3DnewMailAccount Member%3D.ctor"
-                tag="ViewCode" />
-            </referencesInternal>
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="e6db2670-bdd0-4fb0-a0fb-4d73ec20d9ca"
-                name="method"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="3c9fb8fa-bad5-4836-99f5-65ae454d2cdf">
-                    <propertyInstance
-                      Id="f91b6b78-f066-4035-8c7e-f13fabd57726"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="00094ba4-c7c8-4cc1-9897-4efa80c39435">
-                    <propertyInstance
-                      Id="5f3792b6-dde3-4fc3-89bf-48ec6ee3f49c"
-                      name="IsPartial"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="46342efc-115c-4b57-a92d-7243839de622">
-                    <propertyInstance
-                      Id="61822617-3fea-48a7-a492-828326fc9c0e"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="d6f785d5-df99-43f7-b82d-62f97037f35c">
-                    <propertyInstance
-                      Id="e3210885-ae9c-4c63-bfb9-514c40507b82"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="dfbbe6e6-c5a8-40d0-9887-01c48cdc1997">
-                    <propertyInstance
-                      Id="dd8a8485-6066-45e6-a5f3-3ec5af1f4658"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="f88c69c7-b251-4768-870f-567d68342644">
-                    <propertyInstance
-                      Id="92b5080e-bab3-4f1e-941e-a24226e66b7c"
-                      name="params"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-          </operation>
-          <operation
             Id="0d2f0be5-61d1-4c23-94ea-d5555c7981a3"
             name="InitializeComponent"
             isLeaf="false"
@@ -5258,6 +5193,71 @@
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
+          </operation>
+          <operation
+            Id="711e2c85-4d0d-4979-ae08-3accd5b80c32"
+            name="newMailAccount"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="9aa59e75-c733-4d7b-a660-42fe33c7a625"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcomputer%2FDocuments%2FVisual Studio 2013%2FProjects%2FProgrammering-3%2FWpfApplication1%2FWpfApplication1%2Fbin%2FDebug%2FWpfApplication1.exe&quot; Namespace%3DMailClient Type%3DnewMailAccount Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="89448303-c70d-4aab-b2a1-12f84c149cb5"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="37874c64-58a9-4014-8420-a247cc870571">
+                    <propertyInstance
+                      Id="0429965e-4e27-425c-995b-b86b6322693f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eb75ed67-bf57-4e26-9e5e-9101f76a8e7c">
+                    <propertyInstance
+                      Id="06b1107e-27ff-4a26-a8f9-7c845285ce3c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0adf54b5-7b29-4a2a-8974-7da598243abd">
+                    <propertyInstance
+                      Id="bac9cce0-5cb9-4f68-98bc-0bfac6878ac1"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0a5bb0bb-9e3d-4dfe-b9c8-14139844b19b">
+                    <propertyInstance
+                      Id="3e8fcd57-9ec2-47ab-9d28-dea88170ab03"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4317c29a-69b2-43d1-8256-d6c6072ac217">
+                    <propertyInstance
+                      Id="cf64e0ef-30f0-4b9c-8ba4-7cc0b5693c43"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f19b40fe-2365-4678-a437-17a95dcc11d0">
+                    <propertyInstance
+                      Id="d2c91a3b-b97d-4b2b-a426-08d6b95cbb95"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
           </operation>
         </ownedOperationsInternal>
       </class>
@@ -6117,71 +6117,6 @@
             </ownedParameters>
           </operation>
           <operation
-            Id="09967bb1-7fda-4702-8e7d-630674d6a3be"
-            name="SendMail"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <referencesInternal>
-              <reference
-                Id="f83e9175-159c-46cd-903f-cac9758bdf90"
-                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcomputer%2FDocuments%2FVisual Studio 2013%2FProjects%2FProgrammering-3%2FWpfApplication1%2FWpfApplication1%2Fbin%2FDebug%2FWpfApplication1.exe&quot; Namespace%3DMailClient Type%3DSendMail Member%3D.ctor"
-                tag="ViewCode" />
-            </referencesInternal>
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="840d3d90-d3db-47a9-b0fc-fe3c12938f1e"
-                name="method"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="e420f3a6-41ea-4214-97a6-18b2315d3b22">
-                    <propertyInstance
-                      Id="1dd3e77a-9827-4302-9924-f36cab96bc76"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="c9fc17d4-e25e-46a3-984c-0fc1070f0af5">
-                    <propertyInstance
-                      Id="9a6e8c96-3882-448a-b23a-2ddf1dd2a9db"
-                      name="IsPartial"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="46e52da7-5810-416f-b7f0-35385c1ee0f8">
-                    <propertyInstance
-                      Id="daa6b14a-7e18-420a-adab-b63386249ff0"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="6a3550f2-fe74-427d-8f80-0853bab49c23">
-                    <propertyInstance
-                      Id="cb7b6aff-bd17-4613-b162-c70c51466cdc"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="9256e03c-2dd6-466e-b656-df74292c2d03">
-                    <propertyInstance
-                      Id="fd867c68-83cb-46e0-840b-b4a06cfdf703"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="0059ad3e-ae6f-4d74-9ec6-b3ad8b542689">
-                    <propertyInstance
-                      Id="7a331bbc-3fae-4e27-8387-b0837aaaa896"
-                      name="params"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-          </operation>
-          <operation
             Id="c945b1bf-672e-4a36-82bd-c609f07be954"
             name="InitializeComponent"
             isLeaf="false"
@@ -6458,6 +6393,71 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation
+            Id="a5d319bc-60e6-486c-9c05-db8b7a912d8b"
+            name="SendMail"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="2539fc7b-fae8-4ec2-9e3b-b3d61cbd6788"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcomputer%2FDocuments%2FVisual Studio 2013%2FProjects%2FProgrammering-3%2FWpfApplication1%2FWpfApplication1%2Fbin%2FDebug%2FWpfApplication1.exe&quot; Namespace%3DMailClient Type%3DSendMail Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b38fbf4f-7fbf-4d7d-bfc7-7f8cf8efea41"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5d6576a9-6dce-463d-b8f8-171764974926">
+                    <propertyInstance
+                      Id="4fadc747-3e33-4b2a-80ba-7939ca756ac9"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="47743872-51d9-43f3-b60a-94f2d480ed21">
+                    <propertyInstance
+                      Id="87d616c2-242d-4d63-bf92-2e698fee2abe"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="61691f89-6c71-4caa-9b31-49cbf709b88c">
+                    <propertyInstance
+                      Id="e374e679-5e37-4736-a9b5-f2457f8ff83c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f8ddd63d-f566-47a5-852e-7ae5b5358a0e">
+                    <propertyInstance
+                      Id="c19abba3-aa17-4d23-9246-01b355319dde"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cb7bc303-d675-487d-903f-4537c0b692f1">
+                    <propertyInstance
+                      Id="d11a96c2-2bb7-40fb-864e-91f676b5242b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e43dbf22-e011-4a39-9d90-5e5abbe72f96">
+                    <propertyInstance
+                      Id="12adda9b-7135-4482-97a2-8ae740a67abf"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -6588,71 +6588,6 @@
           </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
-          <operation
-            Id="6ec4f41a-61a5-4048-a854-390f2e7eb1f7"
-            name="SQLHandling"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <referencesInternal>
-              <reference
-                Id="116eb7e1-43bc-48f7-80ce-18b8413a47e3"
-                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcomputer%2FDocuments%2FVisual Studio 2013%2FProjects%2FProgrammering-3%2FWpfApplication1%2FWpfApplication1%2Fbin%2FDebug%2FWpfApplication1.exe&quot; Namespace%3DMailClient Type%3DSQLHandling Member%3D.ctor"
-                tag="ViewCode" />
-            </referencesInternal>
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="08e631b2-6a72-47a1-8774-e13488f37cb2"
-                name="method"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="50ef8d83-e2a4-4673-bab4-e72d613302c7">
-                    <propertyInstance
-                      Id="1cfb41ef-09ee-4aa4-8809-1a75e0abac75"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="8606a964-6c4f-49c8-8633-ef65b58c68c7">
-                    <propertyInstance
-                      Id="3b97663c-ed3c-4a99-8eda-1f258d721c0c"
-                      name="IsPartial"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="4cb35d26-1e87-47aa-a5ff-06d084369a41">
-                    <propertyInstance
-                      Id="7b3dc0bc-6ce7-4823-9372-08a4f70c390f"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="657a73c7-2745-4de7-a68d-aede39d21204">
-                    <propertyInstance
-                      Id="99f7da46-9fa4-4247-b8b9-51dbbb71f728"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="09299112-488f-439f-9e10-7357f1bf3afd">
-                    <propertyInstance
-                      Id="2427c74e-06af-480f-91d6-1032af5c546e"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="3384cf06-242d-4395-ac07-c9e87d00c412">
-                    <propertyInstance
-                      Id="42fd3d3b-12c8-4344-9467-566851823c59"
-                      name="params"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-          </operation>
           <operation
             Id="dd520c14-a134-41b3-ba08-0f237b667031"
             name="insetToDatabase"
@@ -6883,6 +6818,71 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation
+            Id="0d09092b-17f4-43bf-bb9f-78594daa8236"
+            name="SQLHandling"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="e536ab63-bb87-4438-b28a-d4b43014141b"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcomputer%2FDocuments%2FVisual Studio 2013%2FProjects%2FProgrammering-3%2FWpfApplication1%2FWpfApplication1%2Fbin%2FDebug%2FWpfApplication1.exe&quot; Namespace%3DMailClient Type%3DSQLHandling Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="766103ec-b065-40ca-92fd-534ee97a6442"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6436bf2c-50e3-4b33-8719-f298fef5924e">
+                    <propertyInstance
+                      Id="1789742a-27e7-4380-a749-f428c9c39699"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f79a36e2-2477-4a2e-a709-3e54a2a16cdf">
+                    <propertyInstance
+                      Id="677bce0e-713c-4c75-8af4-9271d8e640a6"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="42953c91-7e2a-40fb-9f52-b77a431a6c15">
+                    <propertyInstance
+                      Id="3de91d5f-bd86-4755-951b-700cb1a34177"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="77943ec8-fa88-422c-9366-fc33239524f6">
+                    <propertyInstance
+                      Id="bea4cc08-8133-456e-8db3-a837d6b04299"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="965dbb47-1b28-434b-8bf6-8bb3a02a6db0">
+                    <propertyInstance
+                      Id="8287e246-5e95-477f-af1d-1c33c5c2f6ab"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="989a2fd2-e469-461a-8b2e-6386bffc2818">
+                    <propertyInstance
+                      Id="5fadab4e-d932-4586-960d-136d32445ee5"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -6953,71 +6953,6 @@
           </generalization>
         </generalsInternal>
         <ownedOperationsInternal>
-          <operation
-            Id="3089d343-47be-4977-8979-5280b6ea62ef"
-            name="App"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <referencesInternal>
-              <reference
-                Id="a8bfc439-6596-44fe-be09-4c3ccc1777b9"
-                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcomputer%2FDocuments%2FVisual Studio 2013%2FProjects%2FProgrammering-3%2FWpfApplication1%2FWpfApplication1%2Fbin%2FDebug%2FWpfApplication1.exe&quot; Namespace%3DMailClient Type%3DApp Member%3D.ctor"
-                tag="ViewCode" />
-            </referencesInternal>
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="b760c52a-d48d-42bc-a925-0841447b36f8"
-                name="method"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="41603ea1-1386-476f-a607-a1a2fe6c2676">
-                    <propertyInstance
-                      Id="c768c905-aa12-416d-bc8f-e4e17d1ac751"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="89202634-d56c-4d41-8ada-de427877daf0">
-                    <propertyInstance
-                      Id="39b32638-ad0b-4656-95e1-5d2f73176f51"
-                      name="IsPartial"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="c04f8bfd-0c22-4b36-a6f5-1167758b61c8">
-                    <propertyInstance
-                      Id="7a0e7e4f-d399-4ed9-9cea-9b8639bf209f"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="a0153123-a126-4f19-9f2c-d4da55105e41">
-                    <propertyInstance
-                      Id="a6c3f227-888a-4a00-89bb-c04c1a0a98fb"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="cc2363b4-6746-4de3-9d3c-48c3baac89e4">
-                    <propertyInstance
-                      Id="7047cc01-c9bc-4391-9aab-5bab34747212"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="5b94d365-9c5a-4bc0-9128-1a9511212f15">
-                    <propertyInstance
-                      Id="c4366324-7e92-4f3b-936e-8dd9826e1f82"
-                      name="params"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-          </operation>
           <operation
             Id="62ff204c-921a-46d1-aa8b-f1ef4ef35758"
             name="InitializeComponent"
@@ -7141,6 +7076,71 @@
                     Id="55f9da8a-5a39-4768-8dc2-7fd7d4d422e5">
                     <propertyInstance
                       Id="e709fc28-2471-4453-b8b2-1a9c91baae79"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="ff37c6d1-bdc5-4e36-8122-e0f38ebf7e81"
+            name="App"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="8ec9c53a-d03d-4803-863d-0ec8cf1b0b3c"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcomputer%2FDocuments%2FVisual Studio 2013%2FProjects%2FProgrammering-3%2FWpfApplication1%2FWpfApplication1%2Fbin%2FDebug%2FWpfApplication1.exe&quot; Namespace%3DMailClient Type%3DApp Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3e927046-e88c-4f2a-8303-4b07bc2c9a8e"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="040d15c8-838d-4378-bec6-a18a0a7a9c69">
+                    <propertyInstance
+                      Id="1c093e04-0b0b-46a4-8f6f-984b40dd3d85"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="222b3e09-4799-4db6-b74f-dafe9dda7279">
+                    <propertyInstance
+                      Id="bb978149-3f52-4592-bfae-55b07eed16d6"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d32082be-b23a-4737-b4e0-fd0a0d6485f0">
+                    <propertyInstance
+                      Id="b413e72e-0aad-4015-878d-24840e5de399"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c3a63d73-8f10-40ba-aa03-32fe9b55cb0d">
+                    <propertyInstance
+                      Id="8bd1dbe7-038a-47a3-aa73-6ad3b3c6f58a"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0e2be3a4-4fe8-4da3-aef2-e54d9278b599">
+                    <propertyInstance
+                      Id="cb4e9de4-3d47-4067-84ed-93f50b4cc463"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="69088fe2-3c03-425a-a542-0646e00a27a1">
+                    <propertyInstance
+                      Id="427b0b68-243b-4cb7-8a0f-33470d63669a"
                       name="params"
                       value="false" />
                   </stereotypeInstanceHasPropertyInstances>
