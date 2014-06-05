@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 12.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/ReverseEngineeringLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Code Generation/Text Transformation Log">
+  <MessageClass Name="Message" Label="Message" Option="Show informational messages" />
+  <MessageClass Name="Warning" Label="Warning" Option="Show warnings" />
+  <MessageClass Name="Error" Label="Error" Option="Show errors" />
+  <MessageClass Name="Property" Label="Property" Option="Show metadata" />
+  <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
+  <Message Timestamp="2014-06-05T19:18:42" Importance="High" Text="Reverse Engineering Started." />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: '4c0823f2-4471-4d67-986a-4ea407a64ebc' -  (ClassifierTemplateParameter)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Boolean' -  (PrimitiveType)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Integer' -  (PrimitiveType)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient' -  (Package)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Medium" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::App' -  (Class)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::App::App' -  (Operation)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::App::InitializeComponent' -  (Operation)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::App::Main' -  (Operation)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Medium" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::Mail' -  (Class)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::Mail::FetchAllMessages' -  (Operation)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::Mail::Mail' -  (Operation)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::Mail::readMail' -  (Operation)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::Mail::readMail::mail' -  (Parameter)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::Mail::SaveAndLoadFullMessage' -  (Operation)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::Mail::SaveAndLoadFullMessage::mail' -  (Parameter)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::Mail::sendEmail' -  (Operation)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::Mail::sendEmail::attachment' -  (Parameter)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::Mail::sendEmail::mailPassword' -  (Parameter)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::Mail::sendEmail::reciverMail' -  (Parameter)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::Mail::sendEmail::senderMail' -  (Parameter)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::Mail::sendEmail::subject' -  (Parameter)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::Mail::sendEmail::textBody' -  (Parameter)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Medium" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MailObjects' -  (Class)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MailObjects::date' -  (Property)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MailObjects::MailObjects' -  (Operation)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MailObjects::MailObjects::date' -  (Parameter)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MailObjects::MailObjects::message' -  (Parameter)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MailObjects::MailObjects::messageID' -  (Parameter)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MailObjects::MailObjects::receiver' -  (Parameter)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MailObjects::MailObjects::sender' -  (Parameter)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MailObjects::MailObjects::subject' -  (Parameter)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MailObjects::message' -  (Property)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MailObjects::messageID' -  (Property)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MailObjects::receiver' -  (Property)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MailObjects::sender' -  (Property)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MailObjects::subject' -  (Property)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Medium" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MailoviewObject' -  (Class)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MailoviewObject::_contentLoaded' -  (Property)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MailoviewObject::Date' -  (Property)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MailoviewObject::DateProperty' -  (Property)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MailoviewObject::InitializeComponent' -  (Operation)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MailoviewObject::MailoviewObject' -  (Operation)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MailoviewObject::MailoviewObject::mail' -  (Parameter)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MailoviewObject::Message' -  (Property)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MailoviewObject::Sender' -  (Property)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MailoviewObject::SenderProperty' -  (Property)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MailoviewObject::Subject' -  (Property)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MailoviewObject::SubjectProperty' -  (Property)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MailoviewObject::System‎.Windows‎.Markup‎.IComponentConnector‎.Connect' -  (Operation)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MailoviewObject::System‎.Windows‎.Markup‎.IComponentConnector‎.Connect::connectionId' -  (Parameter)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MailoviewObject::System‎.Windows‎.Markup‎.IComponentConnector‎.Connect::target' -  (Parameter)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MailoviewObject::UserControl_MouseLeftButtonDown' -  (Operation)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MailoviewObject::UserControl_MouseLeftButtonDown::e' -  (Parameter)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MailoviewObject::UserControl_MouseLeftButtonDown::sender' -  (Parameter)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Medium" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MainWindow' -  (Class)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MainWindow::_contentLoaded' -  (Property)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MainWindow::browserMailRead' -  (Property)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MainWindow::Inbox' -  (Property)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MainWindow::InitializeComponent' -  (Operation)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MainWindow::listMailOverView' -  (Property)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MainWindow::mailObjct' -  (Property)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MainWindow::MailOverView_SelectionChanged' -  (Operation)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MainWindow::MailOverView_SelectionChanged::e' -  (Parameter)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MainWindow::MailOverView_SelectionChanged::sender' -  (Parameter)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MainWindow::mainWindow' -  (Property)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MainWindow::MainWindow' -  (Operation)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MainWindow::menuAbout' -  (Property)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MainWindow::menuAbout_Click' -  (Operation)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MainWindow::menuAbout_Click::e' -  (Parameter)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MainWindow::menuAbout_Click::sender' -  (Parameter)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MainWindow::menuPanel' -  (Property)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MainWindow::menuRecive' -  (Property)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MainWindow::menuRecive_Click' -  (Operation)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MainWindow::menuRecive_Click::e' -  (Parameter)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MainWindow::menuRecive_Click::sender' -  (Parameter)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MainWindow::menuSend' -  (Property)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MainWindow::menuSend_Click' -  (Operation)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MainWindow::menuSend_Click::e' -  (Parameter)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MainWindow::menuSend_Click::sender' -  (Parameter)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MainWindow::menuSendAndRecive' -  (Property)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MainWindow::NewMailAccount' -  (Property)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MainWindow::NewMailAccount_Click' -  (Operation)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MainWindow::NewMailAccount_Click::e' -  (Parameter)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MainWindow::NewMailAccount_Click::sender' -  (Parameter)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MainWindow::System‎.Windows‎.Markup‎.IComponentConnector‎.Connect' -  (Operation)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MainWindow::System‎.Windows‎.Markup‎.IComponentConnector‎.Connect::connectionId' -  (Parameter)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::MainWindow::System‎.Windows‎.Markup‎.IComponentConnector‎.Connect::target' -  (Parameter)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Medium" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::newMailAccount' -  (Class)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::newMailAccount::_contentLoaded' -  (Property)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::newMailAccount::btnApply' -  (Property)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::newMailAccount::btnApply_Click' -  (Operation)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::newMailAccount::btnApply_Click::e' -  (Parameter)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::newMailAccount::btnApply_Click::sender' -  (Parameter)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::newMailAccount::btnCancel' -  (Property)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::newMailAccount::btnCancel_Click' -  (Operation)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::newMailAccount::btnCancel_Click::e' -  (Parameter)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::newMailAccount::btnCancel_Click::sender' -  (Parameter)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::newMailAccount::checkSSL' -  (Property)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::newMailAccount::InitializeComponent' -  (Operation)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::newMailAccount::newMailAccount' -  (Operation)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::newMailAccount::System‎.Windows‎.Markup‎.IComponentConnector‎.Connect' -  (Operation)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::newMailAccount::System‎.Windows‎.Markup‎.IComponentConnector‎.Connect::connectionId' -  (Parameter)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::newMailAccount::System‎.Windows‎.Markup‎.IComponentConnector‎.Connect::target' -  (Parameter)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::newMailAccount::txtMail' -  (Property)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::newMailAccount::txtPassword' -  (Property)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::newMailAccount::txtPOPPort' -  (Property)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::newMailAccount::txtPOPServer' -  (Property)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::newMailAccount::txtSMTPPort' -  (Property)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::newMailAccount::txtSMTPServer' -  (Property)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Medium" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::SendMail' -  (Class)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::SendMail::_contentLoaded' -  (Property)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::SendMail::btrAddFileToMail' -  (Property)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::SendMail::btrAddFileToMail_Click' -  (Operation)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::SendMail::btrAddFileToMail_Click::e' -  (Parameter)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::SendMail::btrAddFileToMail_Click::sender' -  (Parameter)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::SendMail::btrMailSen' -  (Property)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::SendMail::btrMailSen_Click' -  (Operation)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::SendMail::btrMailSen_Click::e' -  (Parameter)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::SendMail::btrMailSen_Click::sender' -  (Parameter)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::SendMail::filename' -  (Property)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::SendMail::InitializeComponent' -  (Operation)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::SendMail::lblAttachments' -  (Property)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::SendMail::sendMail' -  (Property)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::SendMail::SendMail' -  (Operation)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::SendMail::System‎.Windows‎.Markup‎.IComponentConnector‎.Connect' -  (Operation)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::SendMail::System‎.Windows‎.Markup‎.IComponentConnector‎.Connect::connectionId' -  (Parameter)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::SendMail::System‎.Windows‎.Markup‎.IComponentConnector‎.Connect::target' -  (Parameter)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::SendMail::txtCC' -  (Property)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::SendMail::txtReciver' -  (Property)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::SendMail::txtSendMailBody' -  (Property)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::SendMail::txtsubject' -  (Property)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Medium" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::SQLHandling' -  (Class)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::SQLHandling::CreateDatabase' -  (Operation)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::SQLHandling::dbConnection' -  (Property)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::SQLHandling::insetToDatabase' -  (Operation)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::SQLHandling::insetToDatabase::mail' -  (Parameter)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::SQLHandling::readMails' -  (Operation)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::MailClient::SQLHandling::SQLHandling' -  (Operation)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::OpenPop' -  (Package)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::OpenPop::Mime' -  (Package)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::OpenPop::Mime::Message' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::System' -  (Package)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::System::Collections' -  (Package)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::System::Collections::Generic' -  (Package)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::System::Collections::Generic::List' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::System::Collections::Generic::List&lt;MailObjects‎&gt;' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::System::Data' -  (Package)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::System::Data::SQLite' -  (Package)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::System::Data::SQLite::SQLiteConnection' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::System::Object' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::System::Windows' -  (Package)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::System::Windows::Application' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::System::Windows::Controls' -  (Package)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::System::Windows::Controls::Button' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::System::Windows::Controls::CheckBox' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::System::Windows::Controls::Label' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::System::Windows::Controls::Menu' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::System::Windows::Controls::MenuItem' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::System::Windows::Controls::PasswordBox' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::System::Windows::Controls::SelectionChangedEventArgs' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::System::Windows::Controls::StackPanel' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::System::Windows::Controls::TextBox' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::System::Windows::Controls::UserControl' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::System::Windows::Controls::WebBrowser' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::System::Windows::DependencyProperty' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::System::Windows::Input' -  (Package)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::System::Windows::Input::MouseButtonEventArgs' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::System::Windows::Markup' -  (Package)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::System::Windows::Markup::IComponentConnector' -  (Interface)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::System::Windows::RoutedEventArgs' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'mailClienUML::System::Windows::Window' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'String' -  (PrimitiveType)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: mailClienUML::MailClient::MailoviewObject to mailClienUML::System::Windows::Markup::IComponentConnector (InterfaceRealization)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: mailClienUML::MailClient::MailoviewObject to mailClienUML::System::Windows::Controls::UserControl (Generalization)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: mailClienUML::MailClient::MainWindow to mailClienUML::System::Windows::Markup::IComponentConnector (InterfaceRealization)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: mailClienUML::MailClient::MainWindow to mailClienUML::System::Windows::Window (Generalization)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: mailClienUML::MailClient::newMailAccount to mailClienUML::System::Windows::Markup::IComponentConnector (InterfaceRealization)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: mailClienUML::MailClient::newMailAccount to mailClienUML::System::Windows::Window (Generalization)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: mailClienUML::MailClient::SendMail to mailClienUML::System::Windows::Markup::IComponentConnector (InterfaceRealization)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: mailClienUML::MailClient::SendMail to mailClienUML::System::Windows::Window (Generalization)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: mailClienUML::MailClient::App to mailClienUML::System::Windows::Application (Generalization)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: mailClienUML::System::Windows::Controls::SelectionChangedEventArgs to mailClienUML::System::Windows::RoutedEventArgs (Generalization)" />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="High" Text="(8) type(s) fully reverse engineered." />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="High" Text="(22) type(s) partially reverse engineered.  These types were not included in the original selection so their full definitions are not reverse engineered.  Instead, this shallow operation has simply ensured these types exist in the UML model because they are needed in order to fully describe other elements." />
+  <Message Timestamp="2014-06-05T19:18:47" Importance="High" Text="The reverse engineering operation completed with (0) error(s), and (0) warning(s)." />
+</Log>
